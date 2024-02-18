@@ -19,8 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Отправляем сообщение в телеграм-бота
-        $telegram_token = 'YOUR_TELEGRAM_BOT_TOKEN';
-        $chat_id = 'YOUR_TELEGRAM_CHAT_ID';
+        $telegram_token = '6902961567:AAGqWhgHOV0mjGo8xD0R22bJfa--Z0LZLGQ';
+        $chat_id = '-4124980542';
         $text = "Новое сообщение от: $name\nНомер телефона: $phone";
 
         $telegram_url = "https://api.telegram.org/bot$telegram_token/sendMessage?chat_id=$chat_id&text=" . urlencode($text);
