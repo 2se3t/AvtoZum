@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>AvtoZum</title>
+    
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+        <!--Nav bar
+    =====================-->
+
+    <header class="navbar">
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle"/>
+          <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+         <div class="menu">
+            <li><a onclick="scrollToSection('hero')">Главная</a></li>
+            <li><a onclick="scrollToSection('about')">О нас</a></li>
+            <li><a onclick="scrollToSection('advant')">Преимущества</a></li>
+            <li><a onclick="scrollToSection('request')">Запрос</a></li>
+          </div>
+        </ul>
+      </header>
+
+
+        <!--HERO-->
+<div class="back-g">
+    <section id="hero">
+        <div class="hero">
+            <div class="container">
+            <h1><span>Avto</span>Zum</h1>
+            <p>Производство поликов на любое авто на любой вкус!</p>
+            <button onclick="scrollToSection('request')" class="button-28">Купить</button>
+        </div>
+        </div>
+    </section>
+</div>
+
+    <section id="about">
+        <h1>О нас</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eius nemo animi blanditiis numquam aperiam non. Illo quos nihil excepturi voluptates, maxime, minima aliquid dolorem dolor, quis laudantium tenetur deserunt!</p>
+    </section>
+
+    <section id="advant">
+        <div class="block">
+            <i class="fa-solid fa-feather"></i>
+            <p>Полики из EVA материала обладают легким весом и высокой прочностью, обеспечивая надежную защиту и снижая нагрузку на автомобиль.</p>
+        </div>
+        <div class="block">
+            <i class="fa-solid fa-shield"></i>
+            <p>EVA полики обеспечивают хорошую акустическую изоляцию, снижая уровень шума в салоне и создавая комфортные условия для вождения.</p>
+        </div>
+        <div class="block">
+            <i class="fa-solid fa-diamond"></i>
+            <p>Мы используем высококачественный EVA, гарантируя стабильность размеров, устойчивость к воздействиям и долговечность наших продуктов.</p>
+        </div>
+    </section>
+
+
+    <section id="about-mat">
+        <h1>Изготовление и материал</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dignissimos, nam laborum praesentium eaque quod quae aut nihil commodi facere eligendi fugit velit odio ipsa vitae inventore. Sint, nemo odit.</p>
+    </section>
+
+
+
+    
+    <section id="portfolio">
+        <div class="container">
+            <h1>Продукты</h1>
+            <p>Сдесь вы можете выбрать и заказать понравившийся вам товар</p>
+            <h4>[Нажмите или наведите курсор]</h2>
+        </div>
+
+        <div class="portfolio">
+
+          <div class="photo">
+            <img src="img/3.png" alt="Photo 1">
+            <div class="overlay">В разработке(Будет открываться карточка в которой будет возможность сделать заказ через каспи)</div>
+          </div>
+
+          <div class="photo">
+            <img src="img/3.png" alt="Photo 2">
+            <div class="overlay">В разработке(Будет открываться карточка в которой будет возможность сделать заказ через каспи)</div>
+          </div>
+
+          <div class="photo">
+            <img src="img/3.png" alt="Photo 3">
+            <div class="overlay">В разработке(Будет открываться карточка в которой будет возможность сделать заказ через каспи)</div>
+          </div>
+          
+          <div class="photo">
+            <img src="img/3.png" alt="Photo 3">
+            <div class="overlay">В разработке(Будет открываться карточка в которой будет возможность сделать заказ через каспи)</div>
+          </div>
+          
+
+        </div>
+    </section>
+
+    <section id="request">
+        <div class="request">
+            <h1>Заказ</h1>
+            <p>Оставьте свои контакты и мы с вами свяжемся!</p>
+        </div>
+        <div id="response"></div>
+        <form id="contactForm" method="post" action="inc/index.php" novalidate>
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name"  autocomplete="off" pattern="[а-яА-ЯёЁ\s]+" required><br>
+            <label for="phone">Телефон:</label><br>
+            <input type="text" id="phone" name="phone"  autocomplete="off" pattern="[\d\+\s]+" required><br><br>
+            <input type="submit" value="Отправить">
+        </form>
+        <div id="error" class="error"></div>
+    </section>
+    <footer>
+        <div class="foot">
+            <h3>Контакты</h3>
+            <hr>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-phone"></i>
+        <div>
+
+            <h3>Номер:</h3>
+            <p>+7 700 000 00 00</p>
+
+            <h3>Адрес:</h3>
+            <p>г.Шымкент ул.Жибек Жолы 50/2, Shymkent, 160000</p>
+
+            <h4>Made by se3t & bios© </h4>
+
+        </div> 
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab4a839272.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
